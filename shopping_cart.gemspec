@@ -52,6 +52,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-rails'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'selenium-webdriver'
-  spec.add_development_dependency 'shoulda-matchers'
+  spec.add_development_dependency 'shoulda-matchers', '4.0.0.rc1'
+  spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'webdrivers'
 end

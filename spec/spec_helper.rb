@@ -4,7 +4,6 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('dummy/config/environment.rb', __dir__)
 require 'rspec/rails'
-require 'rspec/autorun'
 require 'factory_bot_rails'
 
 Rails.backtrace_cleaner.remove_silencers!
