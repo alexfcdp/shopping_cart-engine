@@ -7,7 +7,7 @@ tr
       = link_to product.title, main_app.book_path(product)
   td
     span.font-16.in-gold-500
-      = "#{t('currency_sign')}#{product.price}"
+      = "#{t('currency_sign')}#{order_item.price}"
   = form_for order_item, remote: true do |f|
     td
       .input-group

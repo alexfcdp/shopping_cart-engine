@@ -13,6 +13,7 @@ require 'support/factory_bot'
 require 'support/capybara'
 require 'ffaker'
 require 'simplecov'
+require 'webdrivers'
 
 SimpleCov.start
 
@@ -30,6 +31,9 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Warden::Test::Helpers, type: :feature
   config.include Rails.application.routes.url_helpers
+  config.before(:each, type: :feature) do
+    default_url_options[:locale] = I18n.default_locale
+  end
 
   %i[controller view request].each do |type|
     config.include ::Rails::Controller::Testing::TestProcess, type: type
