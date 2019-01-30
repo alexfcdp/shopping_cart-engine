@@ -15,3 +15,9 @@ Metrics/BlockLength:
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
