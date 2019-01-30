@@ -20,7 +20,7 @@
         tr
           td
             .general-img-wrap-table
-              = link_to(image_tag(url_for(order_item.product.decorate.cover[:url]), alt: order_item.product.decorate.cover[:name], class: "cart-img-shadow pull-left"), main_app.book_path(order_item.product.decorate))
+              = link_to(image_tag(main_app.url_for(order_item.product.decorate.cover[:url]), alt: order_item.product.decorate.cover[:name], class: "cart-img-shadow pull-left"), main_app.book_path(order_item.product.decorate))
           td
             p.title
               =link_to order_item.product.decorate.title, main_app.book_path(order_item.product.decorate), class:"font-16 in-gold-500"
